@@ -1,9 +1,9 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    background-color: #111;
+body {
+    background-color: #121212;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@ body{
     margin: 0;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,15 +21,16 @@ body{
     max-width: 400px;
 }
 
-.square{
-    background-color: #1d1d1d;
+.square {
+    background-color: #1e1e1e;
     box-shadow: 0 0 2px #000;
     height: 16px;
     width: 16px;
     margin: 2px;
-    transition: 2s ease;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
-.square:hover{
-    transition-duration: 0s;
+.square:hover {
+    transform: scale(1.1) rotate(5deg);
 }
